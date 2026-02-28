@@ -6,341 +6,223 @@
 }
 
 body {
-    font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', serif;
-    line-height: 1.8;
-    color: #2c2c2c;
-    background-color: #f8f6f3;
-    background-image:
-        radial-gradient(circle at 20% 30%, rgba(139, 69, 19, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(0, 100, 0, 0.03) 0%, transparent 50%);
+    font-family: "KaiTi", "楷体", "STKaiti", "Microsoft YaHei", serif;
+    line-height: 1.9;
+    color: #333;
+    background-color: #fff;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s ease;
 }
 
-a:hover {
-    opacity: 0.7;
-}
-
-/* 导航栏 */
+/* 顶部导航 */
 .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(to right, rgba(248, 246, 243, 0.98), rgba(255, 255, 255, 0.98), rgba(248, 246, 243, 0.98));
-    padding: 18px 0;
-    z-index: 100;
-    border-bottom: 1px solid rgba(139, 69, 19, 0.1);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, #8B0000, #6B0000);
+    padding: 0;
+    border-bottom: 3px solid #D4AF37;
 }
 
 .nav-content {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
-.nav a {
-    font-size: 15px;
-    color: #5d4e37;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4AF37;
+    letter-spacing: 4px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 25px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
     letter-spacing: 3px;
-    font-weight: 500;
     position: relative;
-    padding: 5px 0;
 }
 
-.nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(to right, #8B4513, #2E8B57);
-    transition: width 0.3s ease;
-}
-
-.nav a:hover::after {
-    width: 100%;
+.nav-links a:hover {
+    background-color: #5B0000;
 }
 
 /* 主标题区 */
 .hero {
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #f8f6f3 0%, #e8e4df 100%);
+    background: linear-gradient(135deg, #fff5f0 0%, #ffe8e0 100%);
+    padding: 120px 0;
+    text-align: center;
     position: relative;
-    overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle at 15% 50%, rgba(139, 69, 19, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 50%, rgba(46, 139, 87, 0.08) 0%, transparent 40%);
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(139, 69, 19, 0.02) 0%, transparent 60%);
-    animation: rotate 60s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
 }
 
 .hero-content {
-    text-align: center;
-    z-index: 1;
-    padding: 0 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .title {
-    font-size: 80px;
-    font-weight: 300;
-    letter-spacing: 20px;
-    margin-bottom: 25px;
-    color: #2c2c2c;
-    background: linear-gradient(135deg, #2c2c2c 0%, #5d4e37 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 56px;
+    font-weight: bold;
+    color: #8B0000;
+    letter-spacing: 12px;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    width: 120px;
+    height: 3px;
+    background: #D4AF37;
+    margin: 0 auto 30px;
 }
 
 .subtitle {
     font-size: 20px;
+    color: #666;
     letter-spacing: 10px;
-    color: #8B4513;
-    font-weight: 300;
-}
-
-.hero-decoration {
-    position: absolute;
-    bottom: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0.25;
-}
-
-.decoration-icon {
-    width: 180px;
-    height: 180px;
-    animation: float 8s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0) scale(1); }
-    50% { transform: translateY(-15px) scale(1.05); }
 }
 
 /* 通用区块 */
 .section {
-    padding: 120px 0;
-    position: relative;
+    padding: 80px 0;
 }
 
 .section:nth-child(even) {
-    background: linear-gradient(to bottom, #f8f6f3, #f0ede8);
+    background-color: #faf9f6;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 40px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .section-title {
     font-size: 42px;
-    text-align: center;
-    margin-bottom: 80px;
-    font-weight: 300;
-    letter-spacing: 15px;
-    color: #2c2c2c;
-    position: relative;
+    font-weight: bold;
+    color: #8B0000;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
 }
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 80px;
+.section-line {
+    width: 100px;
     height: 3px;
-    background: linear-gradient(to right, #8B4513, #2E8B57);
-    margin: 35px auto 0;
+    background: #D4AF37;
+    margin: 0 auto;
 }
 
-.section-subtitle {
-    text-align: center;
-    font-size: 18px;
-    color: #8B4513;
-    letter-spacing: 8px;
-    margin-bottom: 60px;
-    margin-top: -50px;
-    font-weight: 300;
-}
-
-/* 古琴简介布局 */
-.intro-layout {
+/* 古琴简介 */
+.intro-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 60px;
     align-items: start;
+}
+
+.intro-text {
+    padding: 20px 0;
+}
+
+.intro-lead {
+    font-size: 18px;
+    color: #8B0000;
+    line-height: 2;
+    margin-bottom: 40px;
+    text-indent: 2em;
+    font-weight: 500;
+}
+
+.intro-items {
+    display: grid;
+    gap: 30px;
+}
+
+.intro-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.intro-item p {
+    color: #555;
+    line-height: 2;
+    text-indent: 2em;
 }
 
 .intro-image {
     text-align: center;
     padding: 40px;
-    background: linear-gradient(135deg, #fff 0%, #faf9f6 100%);
-    border: 2px solid rgba(139, 69, 19, 0.15);
+    background-color: #fff;
+    border: 2px solid #D4AF37;
     border-radius: 8px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    position: relative;
-}
-
-.intro-image::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(135deg, #8B4513, #2E8B57, #006400, #8B0000);
-    border-radius: 10px;
-    z-index: -1;
-    opacity: 0.1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
 .guqin-svg {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: auto;
-    opacity: 0.85;
+    margin-bottom: 15px;
 }
 
 .image-caption {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #8B4513;
-    letter-spacing: 3px;
-    font-weight: 500;
-}
-
-/* 内容网格 */
-.content-grid {
-    display: grid;
-    gap: 30px;
-}
-
-.content-item {
-    padding: 35px;
-    border-left: 4px solid #8B4513;
-    background: linear-gradient(135deg, #fff 0%, #faf9f6 100%);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-    transition: all 0.4s ease;
-    border-radius: 0 8px 8px 0;
-}
-
-.content-item:nth-child(2) {
-    border-left-color: #2E8B57;
-}
-
-.content-item:nth-child(3) {
-    border-left-color: #006400;
-}
-
-.content-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-}
-
-.content-item h3 {
-    font-size: 24px;
-    margin-bottom: 18px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    color: #2c2c2c;
-}
-
-.content-item p {
-    color: #5d4e37;
     font-size: 16px;
-    text-align: justify;
-    line-height: 2;
+    color: #8B0000;
+    letter-spacing: 3px;
 }
 
 /* 古琴样式 */
 .styles-section {
-    background: linear-gradient(135deg, #f8f6f3 0%, #e8e4df 50%, #f0ede8 100%);
-    position: relative;
-}
-
-.section-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(139, 69, 19, 0.05) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(46, 139, 87, 0.05) 0%, transparent 40%);
+    background-color: #fff;
 }
 
 .styles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    position: relative;
-    z-index: 1;
 }
 
 .style-card {
-    background: linear-gradient(135deg, #fff 0%, #faf9f6 100%);
-    border-radius: 16px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    transition: all 0.4s ease;
-    position: relative;
-}
-
-.style-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: var(--card-color, #8B4513);
-    z-index: 2;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
 .style-card:hover {
-    transform: translateY(-12px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border-color: #D4AF37;
 }
 
 .style-image {
     width: 100%;
-    height: 280px;
-    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    height: 240px;
+    background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -362,258 +244,138 @@ a:hover {
     padding: 20px;
     text-align: center;
     border: 2px dashed #ddd;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
-.style-content {
-    padding: 35px 30px;
-    position: relative;
-    z-index: 1;
+.style-info {
+    padding: 25px;
 }
 
-.style-card h3 {
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    letter-spacing: 6px;
-    color: #2c2c2c;
+.style-info h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 12px;
+    letter-spacing: 4px;
 }
 
-.style-card p {
-    color: #5d4e37;
+.style-info p {
+    color: #555;
     font-size: 15px;
-    line-height: 2;
-    margin-bottom: 20px;
-    text-align: justify;
+    line-height: 1.9;
 }
 
-.style-features {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.style-features span {
-    padding: 6px 14px;
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(46, 139, 87, 0.1));
-    color: #8B4513;
-    font-size: 12px;
-    letter-spacing: 1px;
-    border-radius: 20px;
-    font-weight: 500;
-}
-
-/* 琴谱列表 */
+/* 琴谱曲目 */
 .scores-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 35px;
 }
 
 .score-item {
-    padding: 40px;
-    background: linear-gradient(135deg, #fff 0%, #faf9f6 100%);
-    border: 1px solid rgba(139, 69, 19, 0.1);
-    border-radius: 10px;
-    transition: all 0.4s ease;
-    position: relative;
-}
-
-.score-item::before {
-    content: '♬';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: rgba(139, 69, 19, 0.15);
-}
-
-.score-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-    border-color: #8B4513;
+    background-color: #fff;
+    padding: 35px;
+    border-left: 4px solid #8B0000;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
 }
 
 .score-item h3 {
-    font-size: 26px;
-    margin-bottom: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
+    color: #8B0000;
+    margin-bottom: 15px;
     letter-spacing: 6px;
-    color: #2c2c2c;
 }
 
 .score-item p {
-    color: #5d4e37;
-    font-size: 16px;
-    margin-bottom: 20px;
-    text-align: justify;
+    color: #555;
+    font-size: 15px;
     line-height: 2;
+    margin-bottom: 20px;
+    text-indent: 2em;
 }
 
-.tags {
+.tag {
     display: inline-block;
     padding: 6px 18px;
-    background: linear-gradient(135deg, #2c2c2c, #5d4e37);
+    background-color: #8B0000;
     color: #fff;
-    font-size: 13px;
-    letter-spacing: 3px;
-    border-radius: 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 4px;
 }
 
-/* 指法卡片 */
+/* 指法入门 */
+.techniques-section {
+    background-color: #fff;
+}
+
 .techniques-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
 }
 
-.technique-card {
-    padding: 35px 25px;
-    background: linear-gradient(135deg, #fff 0%, #faf9f6 100%);
+.technique-item {
+    background-color: #faf9f6;
+    padding: 35px;
     text-align: center;
-    border: 1px solid rgba(139, 69, 19, 0.1);
-    border-radius: 10px;
-    transition: all 0.4s ease;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
 }
 
-.technique-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-color: #8B4513;
-}
-
-.technique-icon {
+.technique-name {
     width: 70px;
     height: 70px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    font-weight: 300;
-    border: 3px solid #8B4513;
+    font-size: 32px;
+    font-weight: bold;
+    color: #D4AF37;
+    background-color: #8B0000;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.05), rgba(46, 139, 87, 0.05));
 }
 
-.technique-card h3 {
-    font-size: 24px;
-    margin-bottom: 18px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    color: #2c2c2c;
-}
-
-.technique-card p {
-    color: #5d4e37;
+.technique-item p {
+    color: #555;
     font-size: 15px;
-    line-height: 1.8;
+    line-height: 1.9;
 }
 
 /* 页脚 */
 .footer {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-    color: #ccc;
+    background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+    padding: 60px 0;
     text-align: center;
-    position: relative;
 }
 
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(to right, #8B4513, #2E8B57, #006400, #8B0000, #8B4513);
-    background-size: 400% 100%;
-    animation: gradient 10s ease infinite;
+.footer-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #D4AF37;
+    letter-spacing: 8px;
+    margin-bottom: 15px;
 }
 
-@keyframes gradient {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-}
-
-.footer-content p {
-    margin-bottom: 12px;
-    font-size: 18px;
-    letter-spacing: 4px;
+.footer-slogan {
+    font-size: 20px;
+    color: #999;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
 }
 
 .footer-text {
-    font-size: 15px !important;
-    letter-spacing: 3px !important;
-    color: #999 !important;
+    font-size: 16px;
+    color: #666;
+    letter-spacing: 3px;
 }
 
 /* 响应式设计 */
-@media (max-width: 1200px) {
-    .container {
-        padding: 0 40px;
-    }
-
-    .styles-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .style-image {
-        height: 220px;
-    }
-
-    .scores-list {
-        grid-template-columns: 1fr;
-    }
-
-    .techniques-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-content {
-        gap: 25px;
-    }
-
-    .nav a {
-        font-size: 13px;
-        letter-spacing: 2px;
-    }
-
-    .hero {
-        height: 70vh;
-    }
-
-    .title {
-        font-size: 52px;
-        letter-spacing: 10px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-        letter-spacing: 5px;
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-
-    .section-title {
-        font-size: 32px;
-        letter-spacing: 8px;
-    }
-
-    .section-subtitle {
-        font-size: 15px;
-        margin-top: -35px;
-    }
-
-    .container {
-        padding: 0 30px;
-    }
-
-    .intro-layout {
+@media (max-width: 1024px) {
+    .intro-content {
         grid-template-columns: 1fr;
         gap: 40px;
     }
@@ -623,49 +385,92 @@ a:hover {
     }
 
     .styles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        padding: 0 15px;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .title {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        letter-spacing: 6px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .styles-grid {
         grid-template-columns: 1fr;
     }
 
-    .style-image {
-        height: 200px;
-    }
-
-    .style-content {
-        padding: 25px 20px;
-    }
-
-    .style-card h3 {
-        font-size: 24px;
-        letter-spacing: 4px;
+    .scores-list {
+        grid-template-columns: 1fr;
     }
 
     .techniques-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .technique-card {
-        padding: 25px 20px;
-    }
-
-    .decoration-icon {
-        width: 120px;
-        height: 120px;
+    .style-image {
+        height: 200px;
     }
 }
 
 @media (max-width: 480px) {
-    .nav-content {
-        gap: 15px;
+    .nav-links {
+        flex-direction: column;
     }
 
-    .nav a {
-        font-size: 11px;
-        letter-spacing: 1px;
+    .nav-links a {
+        padding: 0;
+        height: 35px;
+        line-height: 35px;
     }
 
     .title {
-        font-size: 42px;
-        letter-spacing: 6px;
+        font-size: 32px;
+        letter-spacing: 4px;
     }
 
     .techniques-grid {
