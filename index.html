@@ -10,56 +10,36 @@
     <!-- 顶部导航 -->
     <nav class="nav">
         <div class="nav-content">
-            <div class="logo">一航的古琴圈</div>
-            <div class="nav-links">
-                <a href="#intro">琴之渊源</a>
-                <a href="#styles">古琴样式</a>
-                <a href="#scores">琴谱曲目</a>
-                <a href="#techniques">指法入门</a>
-            </div>
+            <a href="#intro">琴之渊源</a>
+            <a href="#styles">古琴样式</a>
+            <a href="#scores">琴谱曲目</a>
+            <a href="#techniques">指法入门</a>
         </div>
     </nav>
 
     <!-- 主标题区 -->
     <header class="hero">
+        <div class="hero-bg"></div>
         <div class="hero-content">
             <h1 class="title">一航的古琴圈</h1>
-            <div class="title-line"></div>
             <p class="subtitle">七弦之上 · 传承千年</p>
+        </div>
+        <!-- 装饰图标 -->
+        <div class="hero-decoration">
+            <svg class="decoration-icon" viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="1">
+                <path d="M20 50 Q50 20 80 50 M20 60 Q50 30 80 60"/>
+            </svg>
         </div>
     </header>
 
     <!-- 古琴简介 -->
     <section id="intro" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">琴之渊源</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="intro-content">
-                <div class="intro-text">
-                    <p class="intro-lead">古琴，又称七弦琴，是中国最古老的弹拨乐器之一，有着三千多年的悠久历史。琴道文化源远流长，自古便是文人雅士修身养性的重要工具。</p>
-
-                    <div class="intro-items">
-                        <div class="intro-item">
-                            <h3>历史传承</h3>
-                            <p>古琴有着三千多年的悠久历史，琴道文化源远流长，自古便是文人雅士修身养性的重要工具。</p>
-                        </div>
-                        <div class="intro-item">
-                            <h3>文化内涵</h3>
-                            <p>琴棋书画，四艺之中琴为首。古琴音色古朴典雅，意境深远，蕴含着深厚的哲学思想和人文精神。</p>
-                        </div>
-                        <div class="intro-item">
-                            <h3>构造特点</h3>
-                            <p>古琴全长约三尺六寸五分，象征一年三百六十五天。面圆底方，象征天圆地方。七根弦，象征五行与日月星辰。</p>
-                        </div>
-                    </div>
-                </div>
-
+            <h2 class="section-title">琴之渊源</h2>
+            <div class="intro-layout">
                 <div class="intro-image">
                     <!-- 古琴示意图 -->
-                    <svg class="guqin-svg" viewBox="0 0 400 120" fill="none" stroke="#8B0000" stroke-width="1.5">
+                    <svg class="guqin-svg" viewBox="0 0 400 120" fill="none" stroke="#333" stroke-width="2">
                         <!-- 琴身 -->
                         <ellipse cx="200" cy="60" rx="180" ry="25"/>
                         <line x1="20" y1="60" x2="380" y2="60"/>
@@ -72,15 +52,102 @@
                         <line x1="75" y1="75" x2="375" y2="75" stroke-width="0.5"/>
                         <line x1="80" y1="80" x2="380" y2="80" stroke-width="0.5"/>
                         <!-- 琴徽 -->
-                        <circle cx="80" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="120" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="160" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="200" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="240" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="280" cy="60" r="2" fill="#D4AF37" stroke="none"/>
-                        <circle cx="320" cy="60" r="2" fill="#D4AF37" stroke="none"/>
+                        <circle cx="80" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="120" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="160" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="200" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="240" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="280" cy="60" r="2" fill="#333" stroke="none"/>
+                        <circle cx="320" cy="60" r="2" fill="#333" stroke="none"/>
                     </svg>
-                    <p class="image-caption">古琴结构示意图</p>
+                    <p class="image-caption">古琴示意</p>
+                </div>
+                <div class="content-grid">
+                    <div class="content-item">
+                        <h3>历史传承</h3>
+                        <p>古琴，又称七弦琴，是中国最古老的弹拨乐器之一，有着三千多年的悠久历史。琴道文化源远流长，自古便是文人雅士修身养性的重要工具。</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>文化内涵</h3>
+                        <p>琴棋书画，四艺之中琴为首。古琴音色古朴典雅，意境深远，蕴含着深厚的哲学思想和人文精神，是中华文化的重要载体。</p>
+                    </div>
+                    <div class="content-item">
+                        <h3>构造特点</h3>
+                        <p>古琴全长约三尺六寸五分，象征一年三百六十五天。面圆底方，象征天圆地方。七根弦，象征五行与日月星辰。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 琴谱与曲目 -->
+    <section id="scores" class="section">
+        <div class="container">
+            <h2 class="section-title">琴谱曲目</h2>
+            <div class="scores-list">
+                <div class="score-item">
+                    <h3>高山流水</h3>
+                    <p>曲谱：古琴名曲，取材于伯牙子期的知音故事。曲调高古，意境开阔，表达了对知音难觅的感慨和对自然山水的赞美。</p>
+                    <span class="tags">十大古琴曲 · 传世名作</span>
+                </div>
+                <div class="score-item">
+                    <h3>阳关三叠</h3>
+                    <p>曲谱：据王维《送元二使安西》诗谱曲，表达了离别之情。曲调苍凉，情感深沉，是送别曲的经典之作。</p>
+                    <span class="tags">十大古琴曲 · 抒情佳作</span>
+                </div>
+                <div class="score-item">
+                    <h3>梅花三弄</h3>
+                    <p>曲谱：借梅花傲霜凌雪的品格，抒发高尚的节操。曲调清丽，意境高雅，被誉为"琴中雅品"。</p>
+                    <span class="tags">十大古琴曲 · 托物言志</span>
+                </div>
+                <div class="score-item">
+                    <h3>平沙落雁</h3>
+                    <p>曲谱：描绘秋日江边，大雁落下的情景。曲调悠扬，意境恬静，展现了大自然的美妙与和谐。</p>
+                    <span class="tags">十大古琴曲 · 自然意境</span>
+                </div>
+                <div class="score-item">
+                    <h3>广陵散</h3>
+                    <p>曲谱：古琴曲中唯一有杀伐之气的曲子，讲述聂政刺韩王的故事。曲调激昂慷慨，气势磅礴。</p>
+                    <span class="tags">十大古琴曲 · 悲壮激越</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 指法入门 -->
+    <section id="techniques" class="section">
+        <div class="container">
+            <h2 class="section-title">指法入门</h2>
+            <div class="techniques-grid">
+                <div class="technique-card">
+                    <div class="technique-icon">挑</div>
+                    <h3>挑</h3>
+                    <p>食指向外弹弦，右手食指关节弯曲，指尖轻轻触弦向外弹出。这是最常用的指法之一。</p>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">勾</div>
+                    <h3>勾</h3>
+                    <p>中指向内弹弦，中指弯曲向内勾弦。音色浑厚有力，常用于强音处。</p>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">抹</div>
+                    <h3>抹</h3>
+                    <p>食指向内弹弦，动作轻柔细腻，音色圆润饱满。</p>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">托</div>
+                    <h3>托</h3>
+                    <p>大指向外弹弦，音色清脆明亮，常用于旋律的起始和转折处。</p>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">历</div>
+                    <h3>历</h3>
+                    <p>连续弹奏两根或更多弦，声音连贯流畅，产生一种流动的音效。</p>
+                </div>
+                <div class="technique-card">
+                    <div class="technique-icon">滚</div>
+                    <h3>滚</h3>
+                    <p>从高音弦到低音弦连续快速弹奏，音色连绵不断，如流水般自然。</p>
                 </div>
             </div>
         </div>
@@ -88,155 +155,88 @@
 
     <!-- 古琴样式 -->
     <section id="styles" class="section styles-section">
+        <div class="section-bg"></div>
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">古琴样式</h2>
-                <div class="section-line"></div>
-            </div>
-
+            <h2 class="section-title">古琴样式</h2>
+            <p class="section-subtitle">千年传承 · 匠心之作</p>
             <div class="styles-grid">
-                <div class="style-card">
+                <div class="style-card" data-color="#8B4513">
                     <div class="style-image">
                         <div class="image-placeholder">图片待上传</div>
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>仲尼式</h3>
-                        <p>最经典的古琴样式，因孔子而得名。造型古朴典雅，线条简洁流畅。</p>
+                        <p>最经典的古琴样式，因孔子而得名。造型古朴典雅，线条简洁流畅，深受文人雅士喜爱。</p>
+                        <div class="style-features">
+                            <span>经典样式</span>
+                            <span>历史悠久</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="style-card">
+                <div class="style-card" data-color="#2E8B57">
                     <div class="style-image">
                         <div class="image-placeholder">图片待上传</div>
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>伏羲式</h3>
-                        <p>以伏羲命名的古老样式，造型庄重大气，音色雄浑有力，最具王者之气。</p>
+                        <p>以伏羲命名的古老样式，相传是伏羲所创。造型庄重大气，音色雄浑有力，最具王者之气。</p>
+                        <div class="style-features">
+                            <span>古老样式</span>
+                            <span>王者之气</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="style-card">
+                <div class="style-card" data-color="#DAA520">
                     <div class="style-image">
-                        <img src="images/金丝楠.png" alt="蕉叶式古琴 - 金丝楠">
+                        <img src="images/金丝楠.png" alt="蕉叶式古琴 - 金丝楠" class="style-photo">
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>蕉叶式</h3>
-                        <p>琴身形如蕉叶，线条柔美流畅，宛如自然天成。造型别致独特。</p>
+                        <p>琴身形如蕉叶，线条柔美流畅，宛如自然天成。造型别致独特，极具艺术美感。</p>
+                        <div class="style-features">
+                            <span>金丝楠木</span>
+                            <span>造型独特</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="style-card">
+                <div class="style-card" data-color="#4169E1">
                     <div class="style-image">
                         <div class="image-placeholder">图片待上传</div>
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>连珠式</h3>
-                        <p>琴腰处连续的珠形装饰，如连串珍珠般精致，寓意吉祥美好。</p>
+                        <p>琴腰处连续的珠形装饰，如连串珍珠般精致。寓意吉祥美好，工艺精细考究。</p>
+                        <div class="style-features">
+                            <span>吉祥寓意</span>
+                            <span>精细工艺</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="style-card">
+                <div class="style-card" data-color="#FF6B6B">
                     <div class="style-image">
                         <div class="image-placeholder">图片待上传</div>
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>落霞式</h3>
-                        <p>如夕阳西下时的彩霞，绚丽多彩。造型华美，极具视觉冲击力。</p>
+                        <p>如夕阳西下时的彩霞，绚丽多彩。造型华美，线条优美，极具视觉冲击力。</p>
+                        <div class="style-features">
+                            <span>绚丽多彩</span>
+                            <span>华美造型</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="style-card">
+                <div class="style-card" data-color="#9932CC">
                     <div class="style-image">
                         <div class="image-placeholder">图片待上传</div>
                     </div>
-                    <div class="style-info">
+                    <div class="style-content">
                         <h3>凤势式</h3>
-                        <p>以凤凰为灵感，造型威武灵动。寓意凤凰涅槃、吉祥如意。</p>
+                        <p>以凤凰为灵感，造型威武灵动。寓意凤凰涅槃、吉祥如意，深受琴人喜爱。</p>
+                        <div class="style-features">
+                            <span>凤凰造型</span>
+                            <span>吉祥如意</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 琴谱曲目 -->
-    <section id="scores" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">琴谱曲目</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="scores-list">
-                <div class="score-item">
-                    <h3>高山流水</h3>
-                    <p>曲谱：古琴名曲，取材于伯牙子期的知音故事。曲调高古，意境开阔，表达了对知音难觅的感慨和对自然山水的赞美。</p>
-                    <span class="tag">十大古琴曲 · 传世名作</span>
-                </div>
-
-                <div class="score-item">
-                    <h3>阳关三叠</h3>
-                    <p>曲谱：据王维《送元二使安西》诗谱曲，表达了离别之情。曲调苍凉，情感深沉，是送别曲的经典之作。</p>
-                    <span class="tag">十大古琴曲 · 抒情佳作</span>
-                </div>
-
-                <div class="score-item">
-                    <h3>梅花三弄</h3>
-                    <p>曲谱：借梅花傲霜凌雪的品格，抒发高尚的节操。曲调清丽，意境高雅，被誉为"琴中雅品"。</p>
-                    <span class="tag">十大古琴曲 · 托物言志</span>
-                </div>
-
-                <div class="score-item">
-                    <h3>平沙落雁</h3>
-                    <p>曲谱：描绘秋日江边，大雁落下的情景。曲调悠扬，意境恬静，展现了大自然的美妙与和谐。</p>
-                    <span class="tag">十大古琴曲 · 自然意境</span>
-                </div>
-
-                <div class="score-item">
-                    <h3>广陵散</h3>
-                    <p>曲谱：古琴曲中唯一有杀伐之气的曲子，讲述聂政刺韩王的故事。曲调激昂慷慨，气势磅礴。</p>
-                    <span class="tag">十大古琴曲 · 悲壮激越</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 指法入门 -->
-    <section id="techniques" class="section techniques-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">指法入门</h2>
-                <div class="section-line"></div>
-            </div>
-
-            <div class="techniques-grid">
-                <div class="technique-item">
-                    <div class="technique-name">挑</div>
-                    <p>食指向外弹弦，右手食指关节弯曲，指尖轻轻触弦向外弹出。这是最常用的指法之一。</p>
-                </div>
-
-                <div class="technique-item">
-                    <div class="technique-name">勾</div>
-                    <p>中指向内弹弦，中指弯曲向内勾弦。音色浑厚有力，常用于强音处。</p>
-                </div>
-
-                <div class="technique-item">
-                    <div class="technique-name">抹</div>
-                    <p>食指向内弹弦，动作轻柔细腻，音色圆润饱满。</p>
-                </div>
-
-                <div class="technique-item">
-                    <div class="technique-name">托</div>
-                    <p>大指向外弹弦，音色清脆明亮，常用于旋律的起始和转折处。</p>
-                </div>
-
-                <div class="technique-item">
-                    <div class="technique-name">历</div>
-                    <p>连续弹奏两根或更多弦，声音连贯流畅，产生一种流动的音效。</p>
-                </div>
-
-                <div class="technique-item">
-                    <div class="technique-name">滚</div>
-                    <p>从高音弦到低音弦连续快速弹奏，音色连绵不断，如流水般自然。</p>
                 </div>
             </div>
         </div>
@@ -245,8 +245,7 @@
     <!-- 页脚 -->
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-title">一航的古琴圈</p>
-            <p class="footer-slogan">琴心剑胆 · 德艺双修</p>
+            <p>琴心剑胆 · 德艺双修</p>
             <p class="footer-text">传承古琴文化，弘扬国乐精神</p>
         </div>
     </footer>
